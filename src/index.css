@@ -1,13 +1,115 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+.font-itim {
+  font-family: "Itim", cursive;
+}
+.font-inria-serif {
+  font-family: "Inria Serif", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+.heading-1 {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Inria Sans", Arial, sans-serif;
+}
+
+.heading-2 {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Inria Sans", Arial, sans-serif;
+}
+
+.heading-3 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Inria Sans", Arial, sans-serif;
+}
+
+.main-heading {
+  font-size: 96px;
+  font-weight: 700;
+  font-family: "Inria Sans", Arial, sans-serif;
+}
+
+.h2 {
+  font-size: 54px;
+  font-weight: 700;
+  font-family: "Inria Sans", Arial, sans-serif;
+}
+
+.h3 {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Inria Sans", Arial, sans-serif;
+}
+
+.medium {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Inria Sans", Arial, sans-serif;
+}
+
+.medium-24 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Inria Sans", Arial, sans-serif;
+}
+
+.medium-28 {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Inria Sans", Arial, sans-serif;
+}
+
+.btn-text {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Inria Sans", Arial, sans-serif;
+}
+
+.btn-heading {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Inria Sans", Arial, sans-serif;
+}
+
+.sm-heading {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Inria Sans", Arial, sans-serif;
+}
+
+.btn {
+  background-color: #ff8363;
+  color: #fef4eb;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 50px 50px 0 50px;
+  border-bottom-right-radius: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Inria Sans", Arial, sans-serif;
+}
+
+.btn:hover {
+  background-color: #e5735c;
 }

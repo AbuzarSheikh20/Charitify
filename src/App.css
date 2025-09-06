@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
-}
+:root {
+  --green-50: #e7ece9;
+  --green-100: #b5c0ba;
+  --green-200: #94b0a9;
+  --green-300: #5d8068;
+  --green-400: #3f6844;
+  --green-500: #104221;
+  --green-600: #0d3c16;
+  --green-700: #0d2717;
+  --green-800: #0a1212;
+  --green-900: #061e10;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  --orange-50: #fff4ef;
+  --orange-100: #ffd7cd;
+  --orange-200: #ffbfa3;
+  --orange-300: #ffb095;
+  --orange-400: #ff8c6a;
+  --orange-500: #ff6d56;
+  --orange-600: #ff5c46;
+  --orange-700: #d46c5a;
+  --orange-800: #a04c24;
+  --orange-900: #5c2a21;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  --baby-pink-50: #fff6fd;
+  --baby-pink-100: #fff0f9;
+  --baby-pink-200: #fff5fa;
+  --baby-pink-300: #fae4e2;
+  --baby-pink-400: #fbe4eb;
+  --baby-pink-500: #fbe4eb;
+  --baby-pink-600: #fbe4eb;
+  --baby-pink-700: #d8b1bb;
+  --baby-pink-800: #b8a1a8;
+  --baby-pink-900: #b6b7b9;
 }
