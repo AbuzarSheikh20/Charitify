@@ -3,7 +3,7 @@ import React from "react";
 export const MyButton = ({ label, width = "w-auto", className = "", style = {} }) => {
   return (
     <button
-      className={`btn ${width} ${className}`}
+      className={`btn uppercase ${width} ${className}`}
       style={style}
     >
       {label}

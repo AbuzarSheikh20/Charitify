@@ -21,6 +21,8 @@ import loreal from "./Providers/loreal.png";
 import puma from "./Providers/puma.png";
 import nescafe from "./Providers/nescafe.png";
 
+import featured from "./Causes/featured.png";
+
 export const assets = {
   Gift,
   trustedHand,
@@ -44,4 +46,6 @@ export const assets = {
   loreal,
   puma,
   nescafe,
+
+  featured,
 };
