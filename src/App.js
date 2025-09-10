@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Causes from "./pages/Causes";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import Donate from "./pages/Donate";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/causes" element={<Causes />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/donate" element={<Donate />} />
       </Routes>
       <Footer />
     </div>

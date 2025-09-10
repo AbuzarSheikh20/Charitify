@@ -23,6 +23,13 @@ import nescafe from "./Providers/nescafe.png";
 
 import featured from "./Causes/featured.png";
 
+import shakeHand from "./Contact/shakeHand.png";
+import location from "./Contact/location.png";
+import mail from "./Contact/mail.png";
+import call from "./Contact/call.png";
+
+import paypal from './Donate/paypal.png'
+
 export const assets = {
   Gift,
   trustedHand,
@@ -48,4 +55,11 @@ export const assets = {
   nescafe,
 
   featured,
+
+  shakeHand,
+  location,
+  call,
+  mail,
+
+  paypal,
 };

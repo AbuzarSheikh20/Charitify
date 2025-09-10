@@ -138,14 +138,16 @@ const Causes = () => {
               {/* Donate button at bottom right, floating above card background */}
               <div className="relative z-10" style={{ minHeight: 60 }}>
                 <div className="absolute right-0 -bottom-1/3">
-                  <MyButton
-                    style={{
-                      backgroundColor: "#00A676",
-                      color: "white",
-                      width: 180,
-                    }}
-                    label={"DONATE NOW"}
-                  />
+                  <NavLink to={"/donate"}>
+                    <MyButton
+                      style={{
+                        backgroundColor: "#00A676",
+                        color: "white",
+                        width: 180,
+                      }}
+                      label={"DONATE NOW"}
+                    />
+                  </NavLink>
                 </div>
               </div>
             </div>

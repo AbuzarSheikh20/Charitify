@@ -1,5 +1,6 @@
 import React from 'react'
 import { SectionHeader, MyButton } from './MyButton'
+import { NavLink } from 'react-router-dom'
 
 const DonateSection = () => {
   return (
@@ -15,7 +16,9 @@ const DonateSection = () => {
           lineColor='#FF8363'
         />
       </div>
-      <MyButton className='ml-16' label={'Donate Now'} />
+      <NavLink to="/donate">
+        <MyButton className='ml-16' label={'Donate Now'} />
+      </NavLink>
     </div>
   )
 }
