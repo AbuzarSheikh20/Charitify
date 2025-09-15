@@ -44,12 +44,23 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="w-full bg-[#FF8363] rounded-t-[50px] mt-[50px] py-[50px] flex flex-col items-center">
         <div className="flex justify-between w-full px-[232px] mb-[20px]">
-          <span className="btn-heading text-white">Privacy Policy</span>
-          <span className="btn-heading text-white">Terms of Use</span>
-          <span className="btn-heading text-white">Causes</span>
-          <span className="btn-heading text-white">Legal</span>
-          <span className="btn-heading text-white">Site Map</span>
+          <a href={'/privacy-policy'}>
+            <span className="btn-heading text-white">Privacy Policy</span>
+          </a>
+          <a href={'/terms-and-conditions'}>
+            <span className="btn-heading text-white">Terms & Conditions</span>
+          </a>
+          <a href={'/refund-policy'}>
+            <span className="btn-heading text-white">Refund Policy</span>
+          </a>
+          <a href={'/donation-policy'}>
+            <span className="btn-heading text-white">Donation Policy</span>
+          </a>
+          <a href={'/contact'}>
+            <span className="btn-heading text-white">Site Map</span>
+          </a>
         </div>
+
         <div className="flex justify-center w-full ">
           <span className="text-[#8E98A8] btn-heading">© Copyright <span className='text-white btn-heading'>Charitify</span> Reserved</span>
         </div>

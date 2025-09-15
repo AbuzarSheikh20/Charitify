@@ -1,74 +1,71 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { MyButton } from "./MyButton";
+import { useLocation } from "react-router-dom";
+
 
 const Navbar = () => {
+  const location = useLocation();
   return (
     <div className="bg-black/50 text-white px-[80px] flex h-[80px] backdrop-blur justify-between items-center fixed top-0 left-0 w-full z-50">
-      <NavLink to='/' className="cursor-pointer">
+      <a href='/' className="cursor-pointer">
         <h1 className="text-[28px] font-bold">Charitify</h1>
-      </NavLink>
+      </a>
       <nav className="flex items-center gap-[18px] uppercase">
         <ul className="flex space-x-4 gap-[18px]">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `medium cursor-pointer transition-all duration-300 ${isActive
-                ? "border-b-2 border-[#FF8363]"
-                : "hover:border-b-2 hover:border-gray-400"
-              }`
-            }
+          <a
+            href="/"
+            className={`medium cursor-pointer transition-all duration-300 ${location.pathname === "/"
+              ? "border-b-2 border-[#FF8363]"
+              : "hover:border-b-2 hover:border-gray-400"
+              }`}
           >
             Home
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `medium cursor-pointer transition-all duration-300 ${isActive
-                ? "border-b-2 border-[#FF8363]"
-                : "hover:border-b-2 hover:border-gray-400"
-              }`
-            }
+          </a>
+
+          <a
+            href="/about"
+            className={`medium cursor-pointer transition-all duration-300 ${location.pathname === "/about"
+              ? "border-b-2 border-[#FF8363]"
+              : "hover:border-b-2 hover:border-gray-400"
+              }`}
           >
             About
-          </NavLink>
-          <NavLink
-            to="/causes"
-            className={({ isActive }) =>
-              `medium cursor-pointer transition-all duration-300 ${isActive
-                ? "border-b-2 border-[#FF8363]"
-                : "hover:border-b-2 hover:border-gray-400"
-              }`
-            }
+          </a>
+
+          <a
+            href="/causes"
+            className={`medium cursor-pointer transition-all duration-300 ${location.pathname === "/causes"
+              ? "border-b-2 border-[#FF8363]"
+              : "hover:border-b-2 hover:border-gray-400"
+              }`}
           >
             Causes
-          </NavLink>
-          <NavLink
-            to="/blog"
-            className={({ isActive }) =>
-              `medium cursor-pointer transition-all duration-300 ${isActive
-                ? "border-b-2 border-[#FF8363]"
-                : "hover:border-b-2 hover:border-gray-400"
-              }`
-            }
+          </a>
+
+          <a
+            href="/blog"
+            className={`medium cursor-pointer transition-all duration-300 ${location.pathname === "/blog"
+              ? "border-b-2 border-[#FF8363]"
+              : "hover:border-b-2 hover:border-gray-400"
+              }`}
           >
             Blog
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              `medium cursor-pointer transition-all duration-300 ${isActive
-                ? "border-b-2 border-[#FF8363]"
-                : "hover:border-b-2 hover:border-gray-400"
-              }`
-            }
+          </a>
+
+          <a
+            href="/contact"
+            className={`medium cursor-pointer transition-all duration-300 ${location.pathname === "/contact"
+              ? "border-b-2 border-[#FF8363]"
+              : "hover:border-b-2 hover:border-gray-400"
+              }`}
           >
             Contact
-          </NavLink>
+          </a>
         </ul>
-        <NavLink to={'/donate'}>
+
+        <a href={'/donate'}>
           <MyButton label={"Donate Now"} />
-        </NavLink>
+        </a>
       </nav>
     </div>
   );
